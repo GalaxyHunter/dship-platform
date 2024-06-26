@@ -1,39 +1,39 @@
-![Saleor Platform](https://user-images.githubusercontent.com/249912/71523206-4e45f800-28c8-11ea-84ba-345a9bfc998a.png)
+![Dship Platform](https://user-images.githubusercontent.com/249912/71523206-4e45f800-28c8-11ea-84ba-345a9bfc998a.png)
 
 <div align="center">
-  <h1>Saleor Platform</h1>
+  <h1>Dship Platform</h1>
 </div>
 
 <div align="center">
-  <p>Run all Saleor services from one repository.</p>
+  <p>Run all Dship services from one repository.</p>
 </div>
 
 <div align="center">
-  <a href="https://saleor.io/">🏠 Website</a>
+  <a href="https://Dship.io/">🏠 Website</a>
   <span> • </span>
-  <a href="https://docs.saleor.io/docs/3.x/">📚 Docs</a>
+  <a href="https://docs.Dship.io/docs/3.x/">📚 Docs</a>
   <span> • </span>
-  <a href="https://saleor.io/blog/">📰 Blog</a>
+  <a href="https://Dship.io/blog/">📰 Blog</a>
   <span> • </span>
-  <a href="https://twitter.com/getsaleor">🐦 Twitter</a>
+  <a href="https://twitter.com/getDship">🐦 Twitter</a>
 </div>
 
 <div align="center">
-  <a href="https://githubbox.com/saleor/saleor-platform">🔎 Explore Code</a>
+  <a href="https://githubbox.com/Dship/Dship-platform">🔎 Explore Code</a>
 </div>
 
 ## About
 
-### What is Saleor Platform?
+### What is Dship Platform?
 
-Saleor Platform is the easiest way to start local development with all the major Saleor services:
-- [Core GraphQL API](https://github.com/saleor/saleor)
-- [Dashboard](https://github.com/saleor/saleor-dashboard)
+Dship Platform is the easiest way to start local development with all the major Dship services:
+- [Core GraphQL API](https://github.com/Dship/Dship)
+- [Dashboard](https://github.com/Dship/Dship-dashboard)
 - Mailpit (Test email interface)
 - Jaeger (APM)
 - The necessary databases, cache, etc.
 
-*Keep in mind this repository is for local development only and is not meant to be deployed in any production environment! If you're not a developer and just want to try out Saleor you can check our [live demo](https://demo.saleor.io/).*
+*Keep in mind this repository is for local development only and is not meant to be deployed in any production environment! If you're not a developer and just want to try out Dship you can check our [live demo](https://demo.Dship.io/).*
 
 ## Requirements
 1. [Docker](https://docs.docker.com/install/)
@@ -43,19 +43,19 @@ Saleor Platform is the easiest way to start local development with all the major
 To clone the repository, run the following command
 
 ```
-git clone https://github.com/saleor/saleor-platform.git
+git clone https://github.com/Dship/Dship-platform.git
 ```
 
 ## How to run it?
 
 1. We are using shared folders to enable live code reloading. Without this, Docker Compose will not start:
-    - Windows/MacOS: Add the cloned `saleor-platform` directory to Docker shared directories (Preferences -> Resources -> File sharing).
+    - Windows/MacOS: Add the cloned `Dship-platform` directory to Docker shared directories (Preferences -> Resources -> File sharing).
     - Windows/MacOS: Make sure that in Docker preferences you have dedicated at least 5 GB of memory (Preferences -> Resources -> Advanced).
     - Linux: No action is required, sharing is already enabled and memory for the Docker engine is not limited.
 
 2. Go to the cloned directory:
 ```shell
-cd saleor-platform
+cd Dship-platform
 ```
 
 3. Build the application:
@@ -80,8 +80,8 @@ docker compose up
 ```
 
 ## Where is the application running?
-- Saleor Core (API) - http://localhost:8000
-- Saleor Dashboard - http://localhost:9000
+- Dship Core (API) - http://localhost:8000
+- Dship Dashboard - http://localhost:9000
 - Jaeger UI (APM) - http://localhost:16686
 - Mailpit (Test email interface) - http://localhost:8025
 
@@ -160,14 +160,14 @@ docker compose down --volumes db
 
 ## Feedback
 
-If you have any questions or feedback, do not hesitate to contact us via [GitHub Discussions](https://github.com/saleor/saleor/discussions).
+If you have any questions or feedback, do not hesitate to contact us via [GitHub Discussions](https://github.com/Dship/Dship/discussions).
 
 ## License
 
-Disclaimer: Everything you see here is open and free to use as long as you comply with the [license](https://github.com/saleor/saleor-platform/blob/main/LICENSE). There are no hidden charges. We promise to do our best to fix bugs and improve the code.
+Disclaimer: Everything you see here is open and free to use as long as you comply with the [license](https://github.com/Dship/Dship-platform/blob/main/LICENSE). There are no hidden charges. We promise to do our best to fix bugs and improve the code.
 
 Some situations do call for extra code; we can cover exotic use cases or build you a custom e-commerce appliance.
 
-#### Crafted with ❤️ by [Saleor Commerce](https://saleor.io/)
+#### Crafted with ❤️ by [Dship Commerce](https://Dship.io/)
 
-hello@saleor.io
+hello@Dship.io
