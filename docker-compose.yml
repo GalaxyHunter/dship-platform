@@ -23,7 +23,7 @@ services:
     environment:
       - JAEGER_AGENT_HOST=jaeger
       - DASHBOARD_URL=http://dashboard:9000/
-      - ALLOWED_HOSTS=localhost,api,dship.centralindia.cloudapp.azure.com
+      - ALLOWED_HOSTS=localhost,api,${DOMAIN_NAME}
 
   dashboard:
     image: ghcr.io/saleor/saleor-dashboard:latest
@@ -34,7 +34,7 @@ services:
       - api
     environment:
       - API_URI=http://api:8000/graphql/
-      - ALLOWED_HOSTS=localhost,dship.centralindia.cloudapp.azure.com
+      - ALLOWED_HOSTS=localhost,${DOMAIN_NAME}
 
   db:
     image: library/postgres:15-alpine
@@ -108,7 +108,9 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx.conf.template:/etc/nginx/nginx.conf.template
+      - ./entrypoint.sh:/entrypoint.sh
+    entrypoint: ["/entrypoint.sh"]
     depends_on:
       - api
       - dashboard
